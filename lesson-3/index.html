@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <title>lesson-3</title>
+</head>
+
+<body>
+  <div style="margin-bottom: 15px;">
+    <h2 style="font-size: 34px; margin-bottom: 0px;">Форма заявки на работу в зоопарке</h2>
+    <em>Пожалуйста заполните форму. Обязателные поля помечены <span style="color: red;">*</span></em>
+  </div>
+  <form style="width: 580px;">
+    <fieldset style="margin-bottom: 15px;">
+      <legend><strong>Контактная информация</strong></legend>
+      <div style="width: 370px;">
+        <div style="margin-bottom: 15px;">
+          <p style="display: inline;">Имя<span style="color: red;">*</span></p>
+          <input type="text" style="float: right; width: 250px;">
+        </div>
+
+        <div style="margin-bottom: 15px;">
+          <p style="display: inline;">Телефон<span style="color: red;">*</span></p>
+          <input type="text" style="float: right; width: 250px;">
+        </div>
+
+        <div style="margin-bottom: 10px;">
+          <p style="display: inline;">Email<span style="color: red;">*</span></p>
+          <input type="text" style="float: right; width: 250px;">
+        </div>
+      </div>
+    </fieldset>
+
+    <fieldset style="margin-bottom: 15px;">
+      <legend><strong>Персональная информация</strong></legend>
+      <div style="width: 370px;">
+        <div style="margin-bottom: 15px;">
+          <p style="display: inline;">Возраст<span style="color: red;">*</span></p>
+          <input type="text" style="float: right; width: 250px;">
+        </div>
+
+        <div style="margin-bottom: 15px;">
+          <p style="display: inline;">Пол</p>
+          <select style="float: right; width: 258px;">
+            <option value="man">Женщина</option>
+            <option value="woman">Мужчина</option>
+          </select>
+        </div>
+
+        <div style="margin-bottom: 10px;">
+          <p style="display: inline-block; width: 110px; margin-top: 0px;">Перечислите личные качества</p>
+          <textarea style="width: 250px; height: 100px; float: right;"></textarea>
+        </div>
+      </div>
+    </fieldset>
+
+    <fieldset style="margin-bottom: 15px; padding-top: 15px; padding-bottom: 15px;">
+      <legend><strong>Выберите ваших любимых животных</strong></legend>
+      <div style="margin-bottom: 15px;">
+        <label style="display: inline-block; width: 20%;">
+          <input type="checkbox" name="animals" value="zebra">
+          <span>Зебра</span>
+        </label>
+
+        <label style="display: inline-block; width: 20%;">
+          <input type="checkbox" name="animals" value="cat">
+          <span>Кошак</span>
+        </label>
+
+        <label style="display: inline-block; width:20%;">
+          <input type="checkbox" name="animals" value="anaconda">
+          <span>Анаконда</span>
+        </label>
+
+        <label style="display: inline-block; width: 20%;">
+          <input type="checkbox" name="animals" value="human">
+          <span>Человек</span>
+        </label>
+      </div>
+
+      <div>
+        <label style="display: inline-block; width: 20%;">
+          <input type="checkbox" name="animals" value="elephant">
+          <span>Слон</span>
+        </label>
+
+        <label style="display: inline-block; width: 20%;">
+          <input type="checkbox" name="animals" value="antelope">
+          <span>Антилопа</span>
+        </label>
+
+        <label style="display: inline-block; width: 20%;">
+          <input type="checkbox" name="animals" value="pigeon">
+          <span>Голубь</span>
+        </label>
+
+        <label style="display: inline-block; width: 20%;">
+          <input type="checkbox" name="animals" value="crab">
+          <span>Краб</span>
+        </label>
+      </div>
+    </fieldset>
+    <button type="submit">Отправить информацию</button>
+  </form>
+</body>
+
+</html>
