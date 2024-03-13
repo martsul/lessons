@@ -1,0 +1,115 @@
+*, ::before, ::after {
+  border: 0;
+  padding: 0;
+  margin: 0;
+  outline: 0;
+  box-sizing: border-box;
+}
+
+a, a:hover {
+  text-decoration: none;
+  color: #fff;
+}
+
+body {
+  font: normal 600 14px/1.4 "Gilroy", sans-serif;
+}
+
+.services {
+  max-width: 920px;
+  display: flex;
+  padding: 10px 0;
+  margin: 0 auto;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+.card {
+  max-width: 440px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 5px;
+  padding: 0 30px 40px;
+}
+
+.card-dish {
+  box-shadow: 0 0 25px 0 #C7C7C7;
+  padding-top: 20px;
+}
+
+.card-tool {
+  box-shadow: 0 0 4px 0 #C7C7C7;
+  padding-top: 39px;
+}
+
+.card-dish .card__img {
+  height: 100px;
+}
+
+.card-tool .card__img {
+  height: 66px;
+}
+
+.card__title {
+  font-size: 22px;
+  line-height: 24px;
+}
+
+.card-dish .card__title {
+  margin-top: 28px;
+}
+
+.card-tool .card__title {
+  margin-top: 43px;
+}
+
+.card__discriptions {
+  text-align: center;
+  margin-top: 24px;
+  min-height: 110px;
+  display: flex;
+  flex-direction: column;
+  justify-content:  space-between;
+}
+
+.card__text {
+  font-weight: 400;
+  line-height: 16.8px;
+}
+
+.card__price {
+  font-size: 22px;
+  line-height: 24px;
+}
+
+.card__order {
+  display: inline-block;
+  font-size: 18px;
+  padding: 25px 63px 25px 59px;
+  background: #E31E24;
+  border-radius: 5px;
+  margin-top: 44px;
+}
+
+.slider {
+  width: 100%;
+  margin-top: 99px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.slider__item {
+  font-family: "Open Sans";
+  font-size: 18px;
+  width: 50px;
+  height: 50px;
+  background: #fff;
+  border-radius: 5px;
+  box-shadow: 0 0 4px 0 #C7C7C7;
+}
+
+.slider__pages .slider__item:first-child, .slider > .slider__item:last-child {
+  color: #fff;
+  background: #E31E24;
+}
