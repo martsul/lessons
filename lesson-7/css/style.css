@@ -109,6 +109,11 @@ body {
   box-shadow: 0 0 4px 0 #C7C7C7;
 }
 
+.slider__pages {
+  display: flex;
+  gap: 0 15px;
+}
+
 .slider__pages .slider__item:first-child, .slider > .slider__item:last-child {
   color: #fff;
   background: #E31E24;
