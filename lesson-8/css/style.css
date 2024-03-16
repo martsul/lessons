@@ -150,15 +150,15 @@ body {
 
 @media (max-width: 1114px) {
   .content {
-    padding: 20px calc(50% - 471px);
+    padding: 20px calc(50% - 479px);
   }
 
   .order__delivery-inf {
-    max-width: 510px;
+    max-width: 526px;
   }
 }
 
-@media (max-width: 1022px) {
+@media (max-width: 1038px) {
   .content {
     padding: 20px calc(50% - 360px);
   }
