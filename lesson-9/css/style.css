@@ -1,0 +1,162 @@
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  box-sizing: border-box;
+  outline: 0;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  background: #2f342a;
+  height: 100%;
+}
+
+.preoloader {
+  display: flex;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.preoloader__container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: start;
+  gap: 4px;
+  position: relative;
+  width: 60px;
+  height: 60px;
+}
+
+.preoloader__container::before {
+  content: "";
+  display: inline-block;
+  height: 17px;
+  width: 17px;
+  background: #dab635;
+  position: absolute;
+  top: 0;
+  left: 0;
+  animation: preoloderAnimation 2s linear infinite;
+}
+
+.preoloader__item {
+  border: 0.5px solid #ffffffb0;
+  width: 17px;
+  height: 17px;
+}
+
+.preoloader__item:nth-child(5) {
+  border: 0;
+}
+
+
+@keyframes preoloderAnimation {
+  6.25% {
+    width: 24px;
+    height: 24px;
+    top: -4px;
+  }
+
+  12.5% {
+    width: 17px;
+    height: 17px;
+    left: 21px;
+    top: 0;
+  } 
+
+  18.75% {
+    width: 24px;
+    height: 24px;
+    top: -4px;
+  }
+
+  25% {
+    width: 17px;
+    height: 17px;
+    left: 42px;
+    top: 0;
+  }
+
+  31.25% {
+    width: 24px;
+    height: 24px;
+    left: 38px;
+  }
+
+  37.5% {
+    width: 17px;
+    height: 17px;
+    left: 42px;
+    top: 21px;
+  }
+
+  43.75% {
+    width: 24px;
+    height: 24px;
+    left: 38px;
+  }
+
+  50% {
+    width: 17px;
+    height: 17px;
+    left: 42px;
+    top: 42px;
+  } 
+
+  56.25% {
+    width: 24px;
+    height: 24px;
+    top: 38px;
+  }
+
+  62.5% {
+    width: 17px;
+    height: 17px;
+    left: 21px;
+    top: 42px;
+  }
+
+  68.75% {  
+    width: 24px;
+    height: 24px;
+    top: 38px;
+  }
+
+  75% {
+    width: 17px;
+    height: 17px;
+    left: 0;
+    top: 42px;
+  }
+
+  81.25% {
+    width: 24px;
+    height: 24px;
+    left: -4px;
+  }
+
+  87.5% {
+    width: 17px;
+    height: 17px;
+    left: 0;
+    top: 21px;
+  }
+
+  93.75% {
+    width: 24px;
+    height: 24px;
+    left: -4px;
+  }
+
+  100% {
+    width: 17px;
+    height: 17px;
+    left: 0;
+    top: 0;
+  }
+}
