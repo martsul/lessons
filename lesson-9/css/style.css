@@ -11,7 +11,7 @@ html {
 }
 
 body {
-  background: #2f342a;
+  background: #2a2a34;
   height: 100%;
 }
 
@@ -23,140 +23,195 @@ body {
 }
 
 .preoloader__container {
-  display: flex;
   flex-wrap: wrap;
   align-items: start;
   gap: 4px;
   position: relative;
+  left: -10px;
+  top: -45px;
   width: 60px;
   height: 60px;
+  border-radius: 50%;
 }
 
 .preoloader__container::before {
   content: "";
   display: inline-block;
-  height: 17px;
-  width: 17px;
+  position: absolute;
+  top: 0%;
+  left: 50%;
+  width: 25px;
+  height: 25px;
   background: #dab635;
+  opacity: 0.9;
+  border-radius: 50%;
+  animation: aroundAnimation 1s linear infinite;
+}
+
+.preoloader__container::after {
+  content: "";
+  display: inline-block;
   position: absolute;
   top: 0;
-  left: 0;
-  animation: preoloderAnimation 2s linear infinite;
+  left: 50%;
+  width: 25px;
+  height: 25px;
+  background: #359bda;
+  opacity: 0.9;
+  border-radius: 50%;
+  animation: aroundAnimation 2s linear infinite;
 }
 
-.preoloader__item {
-  border: 0.5px solid #ffffffb0;
-  width: 17px;
-  height: 17px;
+.circle {
+  width: 25px;
+  height: 25px;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  background: #a93535;
+  opacity: 0.9;
+  border-radius: 50%;
+  animation: aroundAnimation 6s linear infinite;
 }
 
-.preoloader__item:nth-child(5) {
-  border: 0;
-}
-
-
-@keyframes preoloderAnimation {
-  6.25% {
-    width: 24px;
-    height: 24px;
-    top: -4px;
+@keyframes aroundAnimation {
+  3.57% {
+    top: 2%;
+    left: 60%;
   }
 
-  12.5% {
-    width: 17px;
-    height: 17px;
-    left: 21px;
-    top: 0;
-  } 
-
-  18.75% {
-    width: 24px;
-    height: 24px;
-    top: -4px;
+  7.14% {
+    top: 5%;
+    left: 70%;
   }
 
-  25% {
-    width: 17px;
-    height: 17px;
-    left: 42px;
-    top: 0;
+  10.71% {
+    top: 10%;
+    left: 80%;
   }
 
-  31.25% {
-    width: 24px;
-    height: 24px;
-    left: 38px;
+  14.28% {
+    top: 20%;
+    left: 90%;
   }
 
-  37.5% {
-    width: 17px;
-    height: 17px;
-    left: 42px;
-    top: 21px;
+  17.85% {
+    top: 30%;
+    left: 95%;
   }
 
-  43.75% {
-    width: 24px;
-    height: 24px;
-    left: 38px;
+  21.42% {
+    top: 40%;
+    left: 98%;
   }
 
-  50% {
-    width: 17px;
-    height: 17px;
-    left: 42px;
-    top: 42px;
-  } 
-
-  56.25% {
-    width: 24px;
-    height: 24px;
-    top: 38px;
+  24.99% {
+    top: 50%;
+    left: 100%;
   }
 
-  62.5% {
-    width: 17px;
-    height: 17px;
-    left: 21px;
-    top: 42px;
+  28.56% {
+    top: 60%;
+    left: 98%;
   }
 
-  68.75% {  
-    width: 24px;
-    height: 24px;
-    top: 38px;
+  32.13% {
+    top: 70%;
+    left: 95%;
   }
 
-  75% {
-    width: 17px;
-    height: 17px;
+  35.7% {
+    top: 80%;
+    left: 90%;
+  }
+
+  39.27% {
+    top: 90%;
+    left: 80%;
+  }
+
+  42.84% {
+    top: 95%;
+    left: 70%;
+  }
+
+  46.41% {
+    top: 98%;
+    left: 60%;
+  }
+
+  49.98% {
+    top: 100%;
+    left: 50%;
+  }
+
+  53.55% {
+    top: 98%;
+    left: 40%;
+  }
+
+  57.12% {
+    top: 95%;
+    left: 30%;
+  }
+
+  60.69% {
+    top: 90%;
+    left: 20%;
+  }
+
+  64.26% {
+    top: 80%;
+    left: 10%;
+  }
+
+  67.83% {
+    top: 70%;
+    left: 5%;
+  }
+
+  71.4% {
+    top: 60%;
+    left: 2%;
+  }
+
+  74.97% {
+    top: 50%;
     left: 0;
-    top: 42px;
   }
 
-  81.25% {
-    width: 24px;
-    height: 24px;
-    left: -4px;
+  78.54% {
+    top: 40%;
+    left: 2%;
   }
 
-  87.5% {
-    width: 17px;
-    height: 17px;
-    left: 0;
-    top: 21px;
+  82.11% {
+    top: 30%;
+    left: 5%;
   }
 
-  93.75% {
-    width: 24px;
-    height: 24px;
-    left: -4px;
+  85.68% {
+    top: 20%;
+    left: 10%;
+  }
+
+  89.25% {
+    top: 10%;
+    left: 20%;
+  }
+
+  92.82% {
+    top: 5%;
+    left: 30%;
+  }
+
+  96.39% {
+    top: 2%;
+    left: 40%;
   }
 
   100% {
-    width: 17px;
-    height: 17px;
-    left: 0;
     top: 0;
+    left: 50%;
   }
 }
