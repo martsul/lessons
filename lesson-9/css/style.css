@@ -13,6 +13,7 @@ html {
 body {
   background: #2a2a34;
   height: 100%;
+  overflow: hidden;
 }
 
 .preoloader {
@@ -23,55 +24,118 @@ body {
 }
 
 .preoloader__container {
-  flex-wrap: wrap;
-  align-items: start;
-  gap: 4px;
   position: relative;
-  left: -10px;
-  top: -45px;
-  width: 60px;
-  height: 60px;
-  border-radius: 50%;
+  top: -20px;
+  left: 100px;
+  width: 300px;
+  height: 300px;
 }
 
 .preoloader__container::before {
   content: "";
   display: inline-block;
   position: absolute;
-  top: 0%;
-  left: 50%;
-  width: 25px;
-  height: 25px;
-  background: #dab635;
-  opacity: 0.9;
+  top: 122px;
+  left: 29px;
   border-radius: 50%;
-  animation: aroundAnimation 1s linear infinite;
+  width: 50px;
+  height: 50px;
+  opacity: .5;
+  background: #fff;
+  animation: corePulse 1.5s linear infinite;
 }
 
-.preoloader__container::after {
+.preoloader__electron {
+  position: absolute;
+  width: 100px;
+  height: 100%;
+}
+
+.preoloader__electron::after {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: .5;
+  border-radius: 50%;
+}
+
+.preoloader__electron:first-child {
+  transform: rotate(60grad);
+  left: 8px;
+  top: -13px;
+  color: #33ba4c;
+}
+
+.preoloader__electron:first-child::before {
   content: "";
   display: inline-block;
   position: absolute;
   top: 0;
   left: 50%;
+  border-radius: 50%;
   width: 25px;
   height: 25px;
-  background: #359bda;
-  opacity: 0.9;
-  border-radius: 50%;
+  background: #33ba4c;
   animation: aroundAnimation 2s linear infinite;
 }
 
-.circle {
-  width: 25px;
-  height: 25px;
+.preoloader__electron:first-child::after {
+  border: #33ba4c solid 1px;
+  left: 7px;
+  top: 9px;
+  animation: radiusPilse 1s linear infinite;
+}
+
+.preoloader__electron:nth-child(2) {
+  left: -7px;
+  top: -9px;
+}
+
+.preoloader__electron:nth-child(2)::before {
+  content: "";
+  display: inline-block;
   position: absolute;
   top: 0;
   left: 50%;
-  background: #a93535;
-  opacity: 0.9;
   border-radius: 50%;
-  animation: aroundAnimation 6s linear infinite;
+  width: 25px;
+  height: 25px;
+  background: #e93d3d;
+  animation: aroundAnimation 1.5s linear infinite;
+}
+
+.preoloader__electron:nth-child(2)::after {
+  border: #e93d3d solid 1px;
+  left: 7px;
+  top: 9px;
+  animation: radiusPilse 2.5s linear infinite;
+}
+
+.preoloader__electron:last-child {
+  transform: rotate(-60grad);
+  left: -6px;
+}
+
+.preoloader__electron:last-child::before {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  border-radius: 50%;
+  width: 25px;
+  height: 25px;
+  background: #493de9;
+  animation: aroundAnimation 1s linear infinite;
+}
+
+.preoloader__electron:last-child::after {
+  border: #645be2 solid 1px;
+  left: 7px;
+  top: 9px;
+  animation: radiusPilse 1.5s linear .3s infinite;
 }
 
 @keyframes aroundAnimation {
@@ -138,6 +202,8 @@ body {
   46.41% {
     top: 98%;
     left: 60%;
+    width: 25px;
+    height: 25px;
   }
 
   49.98% {
@@ -178,6 +244,8 @@ body {
   74.97% {
     top: 50%;
     left: 0;
+    width: 10px;
+    height: 10px;
   }
 
   78.54% {
@@ -213,5 +281,27 @@ body {
   100% {
     top: 0;
     left: 50%;
+    width: 25px;
+    height: 25px;
+  }
+}
+
+@keyframes corePulse {
+  50% {
+    width: 55px;
+    height: 55px;
+    opacity: 1;
+    top: 119.5px;
+    left: 26.5px;
+  }
+}
+
+@keyframes radiusPilse {
+  33.33% {
+    opacity: 1;
+  }
+
+  66.66% {
+    opacity: 1;
   }
 }
