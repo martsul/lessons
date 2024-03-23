@@ -51,16 +51,6 @@ body {
   height: 100%;
 }
 
-.preoloader__electron::after {
-  content: "";
-  display: inline-block;
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  opacity: .5;
-  border-radius: 50%;
-}
-
 .preoloader__electron:first-child {
   transform: rotate(60grad);
   left: 8px;
@@ -68,7 +58,7 @@ body {
   color: #33ba4c;
 }
 
-.preoloader__electron:first-child::before {
+.preoloader__electron::before {
   content: "";
   display: inline-block;
   position: absolute;
@@ -77,14 +67,27 @@ body {
   border-radius: 50%;
   width: 25px;
   height: 25px;
+}
+
+.preoloader__electron:first-child::before {
   background: #33ba4c;
   animation: aroundAnimation 1.8s linear infinite;
 }
 
-.preoloader__electron:first-child::after {
-  border: #33ba4c solid 1px;
+.preoloader__electron::after {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: .5;
+  border-radius: 50%;
   left: 7px;
   top: 9px;
+}
+
+.preoloader__electron:first-child::after {
+  border: #33ba4c solid 1px;
   animation: radiusPilse 1s linear infinite;
 }
 
@@ -94,22 +97,12 @@ body {
 }
 
 .preoloader__electron:nth-child(2)::before {
-  content: "";
-  display: inline-block;
-  position: absolute;
-  top: 0;
-  left: 50%;
-  border-radius: 50%;
-  width: 25px;
-  height: 25px;
   background: #e93d3d;
   animation: aroundAnimation 1.5s linear infinite;
 }
 
 .preoloader__electron:nth-child(2)::after {
   border: #e93d3d solid 1px;
-  left: 7px;
-  top: 9px;
   animation: radiusPilse 2.5s linear infinite;
 }
 
@@ -119,22 +112,12 @@ body {
 }
 
 .preoloader__electron:last-child::before {
-  content: "";
-  display: inline-block;
-  position: absolute;
-  top: 0;
-  left: 50%;
-  border-radius: 50%;
-  width: 25px;
-  height: 25px;
   background: #493de9;
   animation: aroundAnimation 1.2s linear infinite;
 }
 
 .preoloader__electron:last-child::after {
   border: #645be2 solid 1px;
-  left: 7px;
-  top: 9px;
   animation: radiusPilse 1.5s linear .3s infinite;
 }
 
