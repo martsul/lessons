@@ -78,7 +78,7 @@ body {
   width: 25px;
   height: 25px;
   background: #33ba4c;
-  animation: aroundAnimation 2s linear infinite;
+  animation: aroundAnimation 1.8s linear infinite;
 }
 
 .preoloader__electron:first-child::after {
@@ -128,7 +128,7 @@ body {
   width: 25px;
   height: 25px;
   background: #493de9;
-  animation: aroundAnimation 1s linear infinite;
+  animation: aroundAnimation 1.2s linear infinite;
 }
 
 .preoloader__electron:last-child::after {
@@ -139,19 +139,9 @@ body {
 }
 
 @keyframes aroundAnimation {
-  3.57% {
-    top: 2%;
-    left: 60%;
-  }
-
   7.14% {
     top: 5%;
     left: 70%;
-  }
-
-  10.71% {
-    top: 10%;
-    left: 80%;
   }
 
   14.28% {
@@ -159,19 +149,9 @@ body {
     left: 90%;
   }
 
-  17.85% {
-    top: 30%;
-    left: 95%;
-  }
-
   21.42% {
     top: 40%;
     left: 98%;
-  }
-
-  24.99% {
-    top: 50%;
-    left: 100%;
   }
 
   28.56% {
@@ -179,19 +159,9 @@ body {
     left: 98%;
   }
 
-  32.13% {
-    top: 70%;
-    left: 95%;
-  }
-
   35.7% {
     top: 80%;
     left: 90%;
-  }
-
-  39.27% {
-    top: 90%;
-    left: 80%;
   }
 
   42.84% {
@@ -199,21 +169,11 @@ body {
     left: 70%;
   }
 
-  46.41% {
-    top: 98%;
-    left: 60%;
-    width: 25px;
-    height: 25px;
-  }
-
   49.98% {
     top: 100%;
     left: 50%;
-  }
-
-  53.55% {
-    top: 98%;
-    left: 40%;
+    width: 25px;
+    height: 25px;
   }
 
   57.12% {
@@ -221,29 +181,14 @@ body {
     left: 30%;
   }
 
-  60.69% {
-    top: 90%;
-    left: 20%;
-  }
-
   64.26% {
     top: 80%;
     left: 10%;
   }
 
-  67.83% {
-    top: 70%;
-    left: 5%;
-  }
-
   71.4% {
     top: 60%;
     left: 2%;
-  }
-
-  74.97% {
-    top: 50%;
-    left: 0;
     width: 10px;
     height: 10px;
   }
@@ -253,19 +198,11 @@ body {
     left: 2%;
   }
 
-  82.11% {
-    top: 30%;
-    left: 5%;
-  }
-
   85.68% {
     top: 20%;
     left: 10%;
-  }
-
-  89.25% {
-    top: 10%;
-    left: 20%;
+    width: 10px;
+    height: 10px;
   }
 
   92.82% {
@@ -273,7 +210,7 @@ body {
     left: 30%;
   }
 
-  96.39% {
+  96.41% {
     top: 2%;
     left: 40%;
   }
