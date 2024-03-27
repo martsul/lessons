@@ -1,0 +1,227 @@
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  box-sizing: border-box;
+  outline: 0;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  background: #2a2a34;
+  height: 100%;
+  overflow: hidden;
+}
+
+.preoloader {
+  display: flex;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.preoloader__container {
+  position: relative;
+  top: -20px;
+  left: 100px;
+  width: 300px;
+  height: 300px;
+}
+
+.preoloader__container::before {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  top: 122px;
+  left: 29px;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  opacity: .5;
+  background: #fff;
+  animation: corePulse 1.5s linear infinite;
+}
+
+.preoloader__electron {
+  position: absolute;
+  width: 100px;
+  height: 100%;
+}
+
+.preoloader__electron:first-child {
+  transform: rotate(60grad);
+  left: 8px;
+  top: -13px;
+  color: #33ba4c;
+}
+
+.preoloader__electron::before {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  border-radius: 50%;
+  width: 25px;
+  height: 25px;
+}
+
+.preoloader__electron:first-child::before {
+  background: #33ba4c;
+  animation: aroundAnimation 1.8s linear infinite;
+}
+
+.preoloader__electron::after {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: .5;
+  border-radius: 50%;
+  left: 7px;
+  top: 9px;
+}
+
+.preoloader__electron:first-child::after {
+  border: #33ba4c solid 1px;
+  animation: radiusPilse 1s linear infinite;
+}
+
+.preoloader__electron:nth-child(2) {
+  left: -7px;
+  top: -9px;
+}
+
+.preoloader__electron:nth-child(2)::before {
+  background: #e93d3d;
+  animation: aroundAnimation 1.5s linear infinite;
+}
+
+.preoloader__electron:nth-child(2)::after {
+  border: #e93d3d solid 1px;
+  animation: radiusPilse 2.5s linear infinite;
+}
+
+.preoloader__electron:last-child {
+  transform: rotate(-60grad);
+  left: -6px;
+}
+
+.preoloader__electron:last-child::before {
+  background: #493de9;
+  animation: aroundAnimation 1.2s linear infinite;
+}
+
+.preoloader__electron:last-child::after {
+  border: #645be2 solid 1px;
+  animation: radiusPilse 1.5s linear .3s infinite;
+}
+
+@keyframes aroundAnimation {
+  7.14% {
+    top: 5%;
+    left: 70%;
+  }
+
+  14.28% {
+    top: 20%;
+    left: 90%;
+  }
+
+  21.42% {
+    top: 40%;
+    left: 98%;
+  }
+
+  28.56% {
+    top: 60%;
+    left: 98%;
+  }
+
+  35.7% {
+    top: 80%;
+    left: 90%;
+  }
+
+  42.84% {
+    top: 95%;
+    left: 70%;
+  }
+
+  49.98% {
+    top: 100%;
+    left: 50%;
+    width: 25px;
+    height: 25px;
+  }
+
+  57.12% {
+    top: 95%;
+    left: 30%;
+  }
+
+  64.26% {
+    top: 80%;
+    left: 10%;
+  }
+
+  71.4% {
+    top: 60%;
+    left: 2%;
+    width: 10px;
+    height: 10px;
+  }
+
+  78.54% {
+    top: 40%;
+    left: 2%;
+  }
+
+  85.68% {
+    top: 20%;
+    left: 10%;
+    width: 10px;
+    height: 10px;
+  }
+
+  92.82% {
+    top: 5%;
+    left: 30%;
+  }
+
+  96.41% {
+    top: 2%;
+    left: 40%;
+  }
+
+  100% {
+    top: 0;
+    left: 50%;
+    width: 25px;
+    height: 25px;
+  }
+}
+
+@keyframes corePulse {
+  50% {
+    width: 55px;
+    height: 55px;
+    opacity: 1;
+    top: 119.5px;
+    left: 26.5px;
+  }
+}
+
+@keyframes radiusPilse {
+  33.33% {
+    opacity: 1;
+  }
+
+  66.66% {
+    opacity: 1;
+  }
+}
