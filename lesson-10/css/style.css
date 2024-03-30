@@ -209,6 +209,7 @@ body {
     position: absolute;
     top: -82px;
     left: -108px;
+    padding-right: 5px;
   }
 
   .menu__container {
