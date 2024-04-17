@@ -1,0 +1,138 @@
+*, ::before, ::after {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  box-sizing: border-box;
+  outline: 0;
+}
+
+body {
+  display: grid;
+  grid-template-columns: [start] 280px 1fr [end];
+  font: normal 400 13px/1.3 "Open Sans", sans-serif;
+  color: #fff;
+}
+
+.header {
+  grid-column: start / end;
+  height: 200px;
+  background: #123;
+}
+
+.filter {
+  background: #2d79c5;
+}
+
+.content {
+  background: #262A3E;
+  padding: 61px calc(100% - 1030px) 346px 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 30px;
+}
+
+.card {
+  padding: 181px 16px 16px;
+  border-radius: 10px;
+  border: 1px solid #373d58;
+  background: #2c3147;
+  position: relative;
+  width: 230px;
+}
+
+.card__img {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.card__name {
+  color: #A782E9;
+  width: max-content;
+  border-radius: 3px;
+  font-size: 11px;
+  padding: 4px 8px;
+  background: #A782E926;
+  position: absolute;
+  top: 153px;
+}
+
+.card__rare {
+  font-weight: 600;
+  font-size: 18px;
+  margin-bottom: 4px;
+}
+
+.card__shabby {
+  color: #83878F;
+  margin-bottom: 16px;
+}
+
+.card__price {
+  font-weight: 700;
+  font-size: 24px;
+  margin-bottom: 5px;
+}
+
+.card__recomend {
+  color: #83878F;
+  margin-bottom: 16px;
+  width: 154px;
+}
+
+.card__rate {
+  font-weight: 700;
+  font-size: 12px;
+  margin-bottom: 16px;
+  position: relative;
+}
+
+.card__rate::before {
+  content: url("../img/sacle.svg");
+  display: inline-block;
+  position: absolute;
+  right: 0;
+  top: -2.3px;
+}
+
+.card__rate::after {
+  content: url("../img/marker.svg");
+  position: absolute;
+  right: 11px;
+}
+
+.card__basket {
+  display: inline-block;
+  width: 100%;
+  padding: 12px 32.5px;
+  border-radius: 5px;
+  background: #29B474;
+  font: 600 11px/1 "Open Sans", sans-serif;
+  color: #fff;
+}
+
+.footer {
+  grid-column: start / end;
+  background: #ff0000;
+  height: 300px;
+}
+
+@media (max-width: 1330px) {
+  .content {
+    grid-template-columns: 1fr 1fr 1fr;
+    padding-right: calc(100% - 772px);
+  }
+}
+
+@media (max-width: 1085px) {
+  .content {
+    grid-template-columns: 1fr 1fr;
+    padding-right: calc(100% - 511px);
+  }
+}
+
+@media (max-width: 820px) {
+  .content {
+    grid-template-columns: 1fr;
+  }
+}
