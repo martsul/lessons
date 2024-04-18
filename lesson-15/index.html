@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>lesson-8</title>
+  <link rel="stylesheet" href="css/fonts.css" type="text/css">
+  <link rel="stylesheet" href="css/style.css" type="text/css">
+</head>
+
+<body>
+  <main class="content">
+    <form name="order" class="order">
+      <div class="order__detalis">
+        <fieldset class="order__user-inf">
+          <legend class="order__title">Оформить заказ</legend>
+          <label class="order__entry">
+            <span class="order__tip">ФИО*</span>
+            <input type="text" name="full-name" placeholder="Введите ваше ФИО" class="order__field">
+          </label>
+          <label class="order__entry">
+            <span class="order__tip">Телефон*</span>
+            <input type="tel" name="phone" placeholder="Введите ваш номер телефона" class="order__field">
+          </label>
+          <label class="order__entry">
+            <span class="order__tip">Email*</span>
+            <input type="email" name="email" placeholder="Введите ваш email" class="order__field">
+          </label>
+          <label class="order__entry">
+            <span class="order__tip">Адрес*</span>
+            <input type="text" name="address" placeholder="Введите ваш адрес" class="order__field">
+          </label>
+          <label class="order__entry">
+            <span class="order__tip">Примечание к заказу</span>
+            <textarea name="addition" class="order__addition"></textarea>
+          </label>
+        </fieldset>
+        <fieldset class="order__delivery-inf">
+          <legend class="order__title">Способ доставки</legend>
+          <div class="order__variations">
+            <label class="order__marker">
+              <input type="radio" name="warehouse" class="order__point">
+              <span class="order__warehouse">Склад РБ</span>
+            </label>
+            <p class="order__desription">Это самый удобный, бесплатный и быстрый способ получения заказа!</p>
+            <p class="order__desription">Адрес склада: г.Гродно, ул. Горького, 91</p>
+            <p class="order__desription">Отгрузка осуществляется по предварительной договоренности, телефон для связи
+              +375 (15) 261 08 81</p>
+          </div>
+          <div class="order__variations">
+            <label class="order__marker">
+              <input type="radio" name="warehouse" class="order__point">
+              <span class="order__warehouse">Склад РФ</span>
+            </label>
+            <p class="order__desription">Это самый удобный, бесплатный и быстрый способ получения заказа!</p>
+            <p class="order__desription">Адрес склада: г. Подольск, ул. Вишневая, д.7, склад 11</p>
+            <p class="order__desription">Отгрузка осуществляется по предварительной договоренности, телефон для связи +7
+              919 045 55 88</p>
+          </div>
+          <div class="order__variations">
+            <label class="order__marker">
+              <input type="radio" name="warehouse" class="order__point">
+              <span class="order__warehouse">Доставка</span>
+            </label>
+            <p class="order__desription">Сроки доставки товара покупателю устанавливаются договором. Если доставка
+              товара произведена в установленные договором сроки, но товар не был передан покупателю по его вине,
+              повторная доставка производится после повторной оплаты покупателем стоимости услуг по доставке товара.</p>
+          </div>
+        </fieldset>
+      </div>
+      <button type="submit" class="order__register">ОФОРМИТЬ ЗАКАЗ</button>
+    </form>
+  </main>
+  <script src="scripts/script.js"></script>
+</body>
+
+</html>
